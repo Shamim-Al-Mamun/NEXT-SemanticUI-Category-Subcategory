@@ -7,25 +7,26 @@ import Head from 'next/head';
 
 const Index = ({ categories }) => {
 
-  console.log(categories)
+  // console.log(categories)
 
-  const myThemes = {
-    modifiedDarkLarge: {
-      text: 'red', // text color
-      bg: '#2d3439', // background color of whole tree
-      indicator: 'gold', // open folder indicator color
-      separator: 'gold', // row seperator color
-      icon: 'gold', // fill & stroke color of default icons - has no effect when using custom icons
-      selectedBg: '#3f464e', // background of selected element
-      selectedText: '#fafafa', // text color of selected element
-      hoverBg: '#505a63', // background of hovered element
-      hoverText: '#fafafa', // text color of hovered element
-      accentBg: '#2d3439', // background of empty folder element
-      accentText: '#999', // text color of empty folder element
-      textSize: 'large' // preferred text size
-    }
-  }
+  // const myThemes = {
+  //   modifiedDarkLarge: {
+  //     text: 'red', // text color
+  //     bg: '#2d3439', // background color of whole tree
+  //     indicator: 'gold', // open folder indicator color
+  //     separator: 'gold', // row seperator color
+  //     icon: 'gold', // fill & stroke color of default icons - has no effect when using custom icons
+  //     selectedBg: '#3f464e', // background of selected element
+  //     selectedText: '#fafafa', // text color of selected element
+  //     hoverBg: '#505a63', // background of hovered element
+  //     hoverText: '#fafafa', // text color of hovered element
+  //     accentBg: '#2d3439', // background of empty folder element
+  //     accentText: '#999', // text color of empty folder element
+  //     textSize: 'large' // preferred text size
+  //   }
+  // }
   
+
   return (
     <Card className={style.container}>
       	<Head>
@@ -41,7 +42,7 @@ const Index = ({ categories }) => {
 }
 
 Index.getInitialProps = async () => {
-  const res = await fetch('http://localhost:3000/api/notes');
+  const res = await fetch(`https://next-category-subcategory.vercel.app/api/notes`);
   const { data } = await res.json();
 
   return { categories: data }
