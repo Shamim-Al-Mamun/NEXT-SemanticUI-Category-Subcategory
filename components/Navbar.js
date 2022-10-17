@@ -12,22 +12,22 @@ const Navbar = () => {
         <>
         
         <nav className={style.navbar}>
-                <a href="/new" className={style.create}>Add catagory</a>
-                <a  href="/" className={style.create}>All Catagories</a>
-            </nav>
+            <a href="/new" className={style.create}>Add catagory</a>
+            <a  href="/" className={style.create}>All Catagories</a>
+        </nav>
         <nav className={style.navbar}>
-        <Menu color='blue' widths={2}>
-            <Menu.Item
-            name='New Category'
-            active={activeItem === 'New Category'}
-            onClick={(e, { name }) => {setactiveItem(name); router.push('https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/new'); }}
-            />
-            <Menu.Item
-            name='All Category'
-            active={activeItem === 'All Category'}
-            onClick={(e, { name }) => {setactiveItem(name); router.push('https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/') }}
-            />
-      </Menu>
+            <Menu color='blue' widths={2}>
+                <Menu.Item
+                name='New Category'
+                active={activeItem === 'New Category'}
+                onClick={(e, { name }) => {setactiveItem(name); router.push('https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/new', { shallow: true }); }}
+                />
+                <Menu.Item
+                name='All Category'
+                active={activeItem === 'All Category'}
+                onClick={(e, { name }) => {setactiveItem(name); router.push('https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/', { shallow: true }) }}
+                />
+            </Menu>
         </nav>
         </>
 

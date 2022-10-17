@@ -37,7 +37,7 @@ const New = ({ categories }) => {
             })
             
             console.log(res)
-            router.push('/');
+            router.push('/', { shallow: true });
         } catch (error) {
             console.log(error);
         }
@@ -138,6 +138,7 @@ const New = ({ categories }) => {
 }
 
 New.getInitialProps = async () => {
+    
     const res = await fetch(`https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/api/notes`);
     const { data } = await res.json();
   
