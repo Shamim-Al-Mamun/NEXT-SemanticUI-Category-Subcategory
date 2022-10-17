@@ -12,14 +12,10 @@ const Navbar = () => {
         <>
         
         <nav className={style.navbar}>
-            <Link href="/new">
-                <a className={style.create}>Add catagory</a>
-            </Link>
-            <Link href="/">
-                <a className={style.create}>All Catagories</a>
-            </Link>
+                <a href="/new" className={style.create}>Add catagory</a>
+                <a  href="/" className={style.create}>All Catagories</a>
             </nav>
-                  <nav className={style.navbar}>
+        <nav className={style.navbar}>
         <Menu color='blue' widths={2}>
             <Menu.Item
             name='New Category'
