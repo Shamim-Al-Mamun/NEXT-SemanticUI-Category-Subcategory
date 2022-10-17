@@ -42,7 +42,7 @@ const Index = ({ categories }) => {
 }
 
 Index.getInitialProps = async () => {
-  const res = await fetch(`https://next-category-subcategory.vercel.app/api/notes`);
+  const res = await fetch(`https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/api/notes`);
   const { data } = await res.json();
 
   return { categories: data }
