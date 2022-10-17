@@ -18,13 +18,13 @@ const Navbar = () => {
         <nav className={style.navbar}>
             <Menu color='blue' widths={2}>
                 <Menu.Item
-                href="https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/new"
+                href="https://next-category-subcategory.vercel.app/new"
                 name='New Category'
                 active={activeItem === 'New Category'}
                 onClick={(e, { name }) => {setactiveItem(name) }}
                 />
                 <Menu.Item
-                href="https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/"
+                href="https://next-category-subcategory.vercel.app/"
                 name='All Category'
                 active={activeItem === 'All Category'}
                 onClick={(e, { name }) => {setactiveItem(name)}}

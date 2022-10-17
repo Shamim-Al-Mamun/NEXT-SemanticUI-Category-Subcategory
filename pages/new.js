@@ -36,8 +36,7 @@ const New = ({ categories }) => {
                 body: JSON.stringify(formState)
             })
             
-            console.log(res)
-            router.push('/', { shallow: true });
+            location.reload();
         } catch (error) {
             console.log(error);
         }
