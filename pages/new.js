@@ -36,7 +36,7 @@ const New = ({ categories }) => {
                 body: JSON.stringify(formState)
             })
             
-            location.reload();
+            location.reload(); 
         } catch (error) {
             console.log(error);
         }
