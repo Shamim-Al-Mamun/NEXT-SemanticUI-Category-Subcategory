@@ -25,7 +25,6 @@ const Index = ({ categories }) => {
   //     textSize: 'large' // preferred text size
   //   }
   // }
-  
 
   return (
     <Card className={style.container}>
