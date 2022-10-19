@@ -10,7 +10,6 @@ const Navbar = () => {
 
     return (
         <>
-        
         {/* <nav className={style.navbar}>
             <a href="/new" className={style.create}>Add catagory</a>
             <a  href="/" className={style.create}>All Catagories</a>
@@ -32,7 +31,6 @@ const Navbar = () => {
             </Menu>
         </nav>
         </>
-
     );
 }
 
