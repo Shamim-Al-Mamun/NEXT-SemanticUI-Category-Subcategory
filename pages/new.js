@@ -137,6 +137,7 @@ const New = ({ categories }) => {
 }
 
 New.getInitialProps = async () => {
+    //.env problem 
     
     const res = await fetch(`https://next-category-subcategory-cnj96ktno-shamimalmamunaiub-gmailcom.vercel.app/api/notes`);
     const { data } = await res.json();
